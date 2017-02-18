@@ -1,14 +1,8 @@
-@import 'app/styles/fonts';
-@import 'app/styles/commons';
-
 // Global Styles
 html, body {
   margin: 0;
   height: 100%;
 }
-
-@mixin core-font { font-family: 'Century Gothic', 'Roboto', sans-serif !important; }
-body, md-toolbar { @include core-font; }
 
 a, [routerLink] {
   cursor: pointer;
