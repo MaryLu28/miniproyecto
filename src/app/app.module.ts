@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import { RouterModule } from '@angular/router';
+import { SharedModule } from './shared';
 
 import { AppRoutingModule } from './app.routing';
 
@@ -23,6 +24,7 @@ import { HomeComponent } from './home/home.component';
     HttpModule,
     MaterialModule.forRoot(),
     RouterModule,
+    SharedModule,
 
     AppRoutingModule,
   ],
