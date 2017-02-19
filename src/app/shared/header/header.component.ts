@@ -9,7 +9,7 @@ import { LoginService } from '../../core';
 export class HeaderComponent implements OnInit {
 
   constructor(private loginSvc: LoginService) { 
-    this.loginSvc.singIn();
+    this.loginSvc.signIn();
   }
 
   ngOnInit() {
