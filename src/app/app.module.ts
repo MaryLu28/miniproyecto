@@ -5,6 +5,7 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from './shared';
+import { CoreModule } from './core';
 
 import { AppRoutingModule } from './app.routing';
 
@@ -25,6 +26,7 @@ import { HomeComponent } from './home/home.component';
     MaterialModule.forRoot(),
     RouterModule,
     SharedModule,
+    CoreModule,
 
     AppRoutingModule,
   ],
