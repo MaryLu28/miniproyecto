@@ -1,8 +1,13 @@
+@import 'app/styles/common';
+
 // Global Styles
 html, body {
   margin: 0;
   height: 100%;
 }
+
+@mixin core-font { font-family: 'Roboto', 'Helbitica', sans-serif !important; }
+body, md-toolbar { @include core-font; }
 
 a, [routerLink] {
   cursor: pointer;

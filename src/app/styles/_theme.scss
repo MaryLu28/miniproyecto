@@ -1,0 +1,4 @@
+@import '~@angular/material/core/theming/all-theme';
+
+$mp-primary: map-get($mat-cyan, 500);
+$mp-accent: map-get($mat-green, A400);
