@@ -1,1 +1,4 @@
-p Hola soy Home
+div.home
+  div.buttons(fl-layout="row", fl-layout-align="space-around stretch", fl-layout-wrap)
+    a.button(*ngFor="let tile of tiles" href={{ title.link }}) 
+      div.text {{ tile.text }}
