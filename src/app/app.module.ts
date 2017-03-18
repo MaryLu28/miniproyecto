@@ -13,11 +13,13 @@ import { AppComponent } from './app.component';
 
 import { environment } from '../environments/environment';
 import { HomeComponent } from './home/home.component';
+import { ProveComponent } from './prove/prove.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ProveComponent
   ],
   imports: [
     BrowserModule,
