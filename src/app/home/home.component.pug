@@ -1,4 +1,6 @@
 div.home
   div.buttons(fl-layout="row", fl-layout-align="space-around stretch", fl-layout-wrap)
-    a.button(*ngFor="let tile of tiles" href={{ title.link }}) 
-      div.text {{ tile.text }}
+    a.button(*ngFor="let title of titles" href="{{ title.link }}") 
+      div.content
+        md-icon {{ title.icon }}
+        div.text {{ title.text }}

@@ -14,12 +14,12 @@ export class HomeComponent implements OnInit {
     this.headerSvc.hideToolbar(true);
   }
 
-  tiles = [
-    { text: 'Demostrar', link:'/demostrar'},
-    { text: 'Mi perfil', link: '/'},
-    { text: 'Mis teoremas', link: '/'},
-    { text: 'Mis predicados y definiciones', link: '/'},
-    { text: 'Ayuda', link: '/' }
+  titles = [
+    { text: 'Demostrar', link: '/demostrar', icon:'playlist_add_check' },
+    { text: 'Mi perfil', link: '/', icon: 'account_circle' },
+    { text: 'Mis teoremas', link: '/', icon:'format_list_numbered' },
+    { text: 'Mis predicados y definiciones', link: '/', icon:'folder' },
+    { text: 'Ayuda', link: '/', icon:'help'  }
   ];
 
 }

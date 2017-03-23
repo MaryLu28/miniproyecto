@@ -24,12 +24,22 @@ md-toolbar {
   text-align: center;
 }
 
-.text {
-  font-size: 25px;
+.content {
+  font-size: 23px;
   text-align: center;
-  padding: 30px 0;
+  padding: 15px 0;
+  color: black;
 }
 
 a.button:hover {
   background-color: $mp-accent;
+}
+
+md-icon {
+  font-size: 50px;
+  margin-left: -20px;
+}
+
+.text {
+  margin-top: -5px;
 }
