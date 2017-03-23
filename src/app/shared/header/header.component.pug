@@ -2,6 +2,15 @@ doctype html
 div.header
   img(src='http://vignette3.wikia.nocookie.net/outcast/images/f/f8/Imagen-no-disponible.png/revision/latest?cb=20160322191504&path-prefix=es' align='left')
   h1 Lógica
+    button.settings(md-button [mdMenuTriggerFor]="menu") 
+      md-icon account_circle
+      span  Mary
+      md-icon expand_more
+      md-menu(#menu="mdMenu")
+          a(href="/")
+            button(md-menu-item) Mi perfil
+          a(href="/")
+            button(md-menu-item) Cerrar seción
 
 md-toolbar(id="menu", fl-layout="coulum")
   a(href="/") INICIO
