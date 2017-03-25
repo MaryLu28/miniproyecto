@@ -1,0 +1,129 @@
+@import "../styles/theme";
+@import "../styles/common";
+
+.content {
+  margin: 50px;
+}
+
+.button {
+  background-color: $mp-primary;
+}
+
+.left {
+  margin: 10px;
+  width: 55%;
+}
+
+.rigth {
+  float: right;
+  margin: 10px;
+  width: 40%;
+}
+
+.part {
+  margin: 10px;
+}
+
+.prove {
+  width: 100%;
+  box-shadow: 1px 1px 2px 0 #999;
+}
+
+.select {
+  width: 100%;
+}
+
+textarea {
+  height: 300px;
+  width: 98%;
+}
+
+.theorem {
+  box-shadow: 1px 1px 2px 0 #999;
+  height: 300px;
+  overflow: auto;
+}
+
+.def {
+  box-shadow: 1px 1px 2px 0 #999;
+  height: 300px;
+  overflow: auto;
+}
+
+// .example-selected-value {
+//   margin: 15px 0;
+// }
+
+#theorems * { 
+  list-style:none;
+}
+#theorems ul { 
+  padding-left: 0;
+}
+#theorems li { 
+  line-height:180%;
+}
+#theorems li a {
+  color:#222; 
+  text-decoration:none;
+}
+#theorems li a:before { 
+  content:"\025b8"; 
+  color:#ddd; 
+  margin-right:4px;
+}
+#theorems input[name="list"] {
+	position: absolute;
+	left: -1000em;
+	}
+#theorems label:before { 
+  content:"\025b8"; 
+  margin-right:4px;
+}
+#theorems input:checked ~ label:before { 
+  content:"\025be";
+}
+#theorems .interior {
+  display: none;
+  padding-left: 20px;
+}
+#theorems input:checked ~ ul {
+  display:block;
+}
+
+#definitions * { 
+  list-style:none;
+}
+#definitions ul { 
+  padding-left: 0;
+}
+#definitions li { 
+  line-height:180%;
+}
+#definitions li a {
+  color:#222; 
+  text-decoration:none;
+}
+#definitions li a:before { 
+  content:"\025b8"; 
+  color:#ddd; 
+  margin-right:4px;
+}
+#definitions input[name="list"] {
+	position: absolute;
+	left: -1000em;
+	}
+#definitions label:before { 
+  content:"\025b8"; 
+  margin-right:4px;
+}
+#definitions input:checked ~ label:before { 
+  content:"\025be";
+}
+#definitions .interior {
+  display: none;
+  padding-left: 20px;
+}
+#definitions input:checked ~ ul {
+  display:block;
+}

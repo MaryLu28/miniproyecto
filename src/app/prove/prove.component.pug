@@ -1,0 +1,76 @@
+div.content
+  
+  div.rigth
+    div.part
+      label Método de demostración 
+      md-select.select(name="methods")
+        //- md-option(*ngFor="let m of methods" [value]="m.value") {{ m.name }}
+        md-option directo
+        md-option contradicción
+
+    div.part
+      div.theorem
+        ul(id="theorems")
+          li
+            input(type="checkbox" name="list" id="nivel1-1")
+            label.th(for="nivel1-1") Teoremas
+            ul.interior
+              li
+                input(type="checkbox" name="list" id="nivel2-1")
+                label(for="nivel2-1") Todos
+                ul.interior(*ngFor="let t of theorems")
+                  li
+                    span {{ t.id }}
+                    span  
+                    span {{ t.theorem }} 
+              li
+                input(type="checkbox" name="list" id="nivel2-2")
+                label(for="nivel2-2") Equivalencia
+                ul.interior(*ngFor="let t of theorems")
+                  li
+                    span {{ t.id }}
+                    span  
+                    span {{ t.theorem }} 
+
+    div.part
+      div.def
+        ul(id="definitions")
+          li
+            input(type="checkbox" name="list" id="nivel21-1")
+            label.th(for="nivel21-1") Definiciones
+            ul.interior
+              li
+                input(type="checkbox" name="list" id="nivel22-1")
+                label(for="nivel22-1") Todos
+                ul.interior(*ngFor="let d of definitions")
+                  li
+                      
+
+  div.left
+    div.part
+      a.button(md-raised-button routerLink="/") Agregar Teorema
+
+    div.part
+      div.prove
+        p True = True
+
+    div.part
+      md-input-container
+        input(mdInput placeholder="Paso anterior" value="True = True")
+      md-input-container
+        input(mdInput placeholder="Paso anterior" value="True = True")
+      md-input-container
+        input(mdInput placeholder="Paso anterior" value="True = True")  
+
+
+    div.part
+      md-button-toggle-group(#group="mdButtonToggleGroup")
+        md-button-toggle(value="left")
+          md-icon format_align_left
+        md-button-toggle(value="center")
+          md-icon format_align_center
+        md-button-toggle(value="right")
+          md-icon format_align_right
+        md-button-toggle(value="justify" disabled)
+          md-icon format_align_justify
+      //- div(class="example-selected-value") Selected value: {{group.value}}
